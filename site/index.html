@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veterinária especializada em estética animal e bem-estar pet. Agende sua consulta online.">
+    <title>Dra. Suellen Veterinária - Estética e Saúde Animal</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation/Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>Dra. Suellen</h1>
+                <p class="tagline">Veterinária</p>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav" id="navMenu">
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#reviews" class="nav-link">Avaliações</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <img src="images/top_photo_logo.png" alt="Imagem de Dra. Suellen">
+                </div>
+            </div>
+            <div class="hero-text">
+                <h2 class="hero-title">Dra. Suellen</h2>
+                <p class="hero-subtitle">Veterinária Especializada em Estética, Saúde e Bem-estar Animal</p>
+                <div class="hero-locations">
+                    <div class="location-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>São Paulo - SP</span>
+                    </div>
+                    <div class="location-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Consultório Disponível</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary" onclick="window.open('https://wa.me/5511999999999', '_blank')">
+                    <i class="fab fa-whatsapp"></i> Agendar Consulta
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Minha Trajetória / Bio Section -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image">
+                    <div class="image-placeholder circular">
+                        [Foto de perfil]
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3 class="section-title">Minha Trajetória</h3>
+                    <div class="credentials">
+                        <div class="credential-item">
+                            <span class="credential-label">CRMV-SP:</span>
+                            <span class="credential-value">12345</span>
+                        </div>
+                        <div class="credential-item">
+                            <span class="credential-label">Especialização:</span>
+                            <span class="credential-value">Estética Veterinária</span>
+                        </div>
+                    </div>
+                    <p class="about-text">
+                        Com mais de 8 anos de experiência na medicina veterinária, especializei-me em estética animal, 
+                        tricologia e bem-estar pet. Meu objetivo é proporcionar aos animais de estimação não apenas saúde, 
+                        mas também autoestima e confiança, refletindo-se em sua qualidade de vida.
+                    </p>
+                    <p class="about-text">
+                        Formada pela Universidade de São Paulo com especialização em Dermatologia Veterinária, 
+                        busco constantemente atualizar meus conhecimentos nas mais recentes técnicas de estética animal.
+                    </p>
+                    <div class="about-buttons">
+                        <button class="btn btn-secondary" onclick="window.open('https://wa.me/5511999999999', '_blank')">
+                            Falar com Dra. Suellen
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews / Social Proof Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h3 class="section-title">Avaliações</h3>
+            <div class="reviews-wrapper">
+                <div class="google-rating">
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="rating-text">Nota Máxima no Google</p>
+                    <p class="rating-value">5.0 / 5.0</p>
+                    <p class="rating-count">Baseado em 47 avaliações</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "A Dra. Suellen é excelente! Meu pet ficou lindo após o procedimento estético. 
+                        Profissional atenciosa, cuidadosa e oferece um atendimento impecável. Recomendo muito!"
+                    </p>
+                    <p class="testimonial-author">— Maria Silva, tutora do Lulu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filosofia / Missão Section -->
+    <section class="philosophy" id="filosofia">
+        <div class="container">
+            <h3 class="section-title">Nossa Missão</h3>
+            <div class="philosophy-content">
+                <p class="philosophy-text">
+                    Acredito que a saúde e a beleza andam juntas. Cada pet merece sentir-se bem consigo mesmo,
+                    exibindo sua melhor versão. Através de procedimentos éticos, técnicas inovadoras e um atendimento
+                    humanizado, busco trazer autoestima, saúde, beleza e bem-estar para cada animal que passa pelo meu consultório.
+                </p>
+                <p class="philosophy-text">
+                    Meu compromisso é com o bem-estar integral do seu pet, considerando sempre seus limites, 
+                    saúde e individualidade. Cada procedimento é personalizado e pensado no melhor interesse do animal.
+                </p>
+            </div>
+            <button class="btn btn-primary btn-large" onclick="window.open('https://wa.me/5511999999999', '_blank')">
+                <i class="fab fa-whatsapp"></i> Agendar Consulta
+            </button>
+        </div>
+    </section>
+
+    <!-- Serviços / SEO Section -->
+    <section class="services" id="servicos">
+        <div class="container">
+            <h3 class="section-title">Especialidades</h3>
+            <p class="services-intro">
+                Oferecemos uma gama completa de serviços em estética veterinária, saúde e bem-estar animal:
+            </p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h4>Toxina Botulínica Veterinária</h4>
+                    <p>Procedimento seguro e minimamente invasivo para combater rugas e expressões faciais em cães e gatos.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-droplet"></i>
+                    </div>
+                    <h4>Preenchimentos Estéticos</h4>
+                    <p>Utilização de preenchedores seguros e biorreabsorvíveis para restaurar volume e rejuvenescer a aparência.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4>Tricologia Veterinária</h4>
+                    <p>Diagnóstico e tratamento especializado de doenças dermatológicas, alopecia e problemas de pelagem.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h4>Banho e Tosa Terapêutica</h4>
+                    <p>Serviço de grooming profissional com foco na saúde da pele e bem-estar do animal.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h4>Consulta Dermatológica</h4>
+                    <p>Avaliação completa de condições dermatológicas com recomendações personalizadas de tratamento.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h4>Bem-estar e Saúde</h4>
+                    <p>Orientações completas sobre nutrição, saúde mental e qualidade de vida para seu pet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer class="footer" id="contato">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Dra. Suellen</h4>
+                    <p>Veterinária Especializada em Estética Animal</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>WhatsApp: <a href="https://wa.me/5511999999999" target="_blank">(11) 99999-9999</a></p>
+                    <p>Email: contato@drasuellen.com.br</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Localização</h4>
+                    <p>São Paulo - SP</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Dra. Suellen - Veterinária. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5511999999999" class="floating-whatsapp" title="Falar no WhatsApp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Menu Toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        menuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.header')) {
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
