@@ -38,6 +38,7 @@
     --spacing-lg: 2rem;
     --spacing-xl: 3rem;
     --spacing-xxl: 4rem;
+    --spacing-heavy: 5rem;
     
     /* Transições */
     --transition: all 0.3s ease;
@@ -368,34 +369,6 @@ body {
     margin-bottom: var(--spacing-lg);
 }
 
-.credentials {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-md);
-    margin-bottom: var(--spacing-lg);
-    padding: var(--spacing-lg);
-    background: var(--color-bg-primary-semitr);
-    border-radius: var(--radius-md);
-    border-left: 4px solid var(--color-accent);
-}
-
-.credential-item {
-    display: flex;
-    gap: var(--spacing-md);
-}
-
-.credential-label {
-    text-align: right;
-    font-weight: 600;
-    color: var(--color-accent);
-    min-width: 120px;
-}
-
-.credential-value {
-    text-align: left;
-    color: var(--color-text-dark);
-}
-
 .about-text {
     color: var(--color-text-light);
     margin-bottom: var(--spacing-md);
@@ -429,40 +402,6 @@ body {
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-xl);
     align-items: center;
-}
-
-.google-rating {
-    text-align: center;
-    padding: var(--spacing-xl);
-    background: var(--color-white);
-    border-radius: var(--radius-lg);
-    box-shadow: 0 4px 20px var(--color-shadow);
-}
-
-.rating-stars {
-    font-size: 2rem;
-    color: var(--color-star);
-    margin-bottom: var(--spacing-md);
-    letter-spacing: 0.5rem;
-}
-
-.rating-text {
-    color: var(--color-text-light);
-    font-size: 0.95rem;
-    margin-bottom: var(--spacing-sm);
-}
-
-.rating-value {
-    font-family: var(--font-serif);
-    font-size: 2rem;
-    color: var(--color-accent);
-    font-weight: 700;
-    margin-bottom: var(--spacing-sm);
-}
-
-.rating-count {
-    color: var(--color-text-light);
-    font-size: 0.9rem;
 }
 
 .testimonial-card {
@@ -526,7 +465,7 @@ body {
 
 .services {
     padding: var(--spacing-xxl) var(--spacing-md);
-    background: linear-gradient(135deg, var(--color-bg-primary) 0%, var(--color-white) 100%);
+    background: linear-gradient(135deg, var(--color-bg-primary-semitr) 0%, var(--color-white-semitr) 60%)
 }
 
 .services h3 {
@@ -624,6 +563,7 @@ body {
 }
 
 .footer-bottom {
+    font-size: 0.9rem;
     text-align: center;
     padding-top: var(--spacing-lg);
     border-top: 1px solid rgba(201, 169, 97, 0.2);
@@ -671,10 +611,6 @@ body {
         flex-direction: column;
     }
 
-    .hero-title {
-        font-size: 2.2rem;
-    }
-
     .hero-subtitle {
         font-size: 1.1rem;
     }
@@ -720,10 +656,6 @@ body {
         font-size: 1.4rem;
     }
 
-    .hero-title {
-        font-size: 1.8rem;
-    }
-
     .hero-subtitle {
         font-size: 1rem;
     }
@@ -745,19 +677,14 @@ body {
         padding: var(--spacing-xl) var(--spacing-md);
     }
 
-    .credentials {
-        padding: var(--spacing-md);
+    .services {
+        padding-bottom: var(--spacing-heavy);
     }
 
-    .service-card {
+    .service-card,
+    .testimonial-card {
         padding: var(--spacing-md);
     }
-
-    .testimonial-card,
-    .google-rating {
-        padding: var(--spacing-md);
-    }
-}
 
 /* ====================================
    PRINT STYLES
