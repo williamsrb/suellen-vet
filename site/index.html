@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Veterinária especializada em estética animal e bem-estar pet. Agende sua consulta online.">
-    <title>Dra. Suellen Veterinária - Estética e Saúde Animal</title>
+    <title>Suellen Ramos Veterinária - Estética e Saúde Animal</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,12 +18,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation/Header -->
-    <header class="header">
-        <div class="header-container">
-            <div class="logo">
-                <h1>Dra. Suellen</h1>
-                <p class="tagline">Veterinária</p>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-nav">
+            <div id="logo" class="logo">
+                <h1>Dra. Suellen Ramos</h1>
+                <p class="tagline">CRMV-ES 2184</p>
             </div>
             <button class="menu-toggle" id="menuToggle">
                 <i class="fas fa-bars"></i>
@@ -35,72 +35,23 @@
                 <a href="#contato" class="nav-link">Contato</a>
             </nav>
         </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
         <div class="hero-content">
             <div class="hero-image">
                 <div class="image-placeholder">
-                    <img src="images/top_photo_logo.png" alt="Imagem de Dra. Suellen">
+                    <img src="images/top_photo_logo.webp" alt="Imagem de Suellen Ramos">
                 </div>
             </div>
             <div class="hero-text">
-                <h2 class="hero-title">Dra. Suellen</h2>
-                <p class="hero-subtitle">Veterinária Especializada em Estética, Saúde e Bem-estar Animal</p>
+                <p class="hero-subtitle">Dermatologia Veterinária Domiciliar</p>
                 <div class="hero-locations">
                     <div class="location-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>São Paulo - SP</span>
-                    </div>
-                    <div class="location-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Consultório Disponível</span>
+                        <span>Serra e Vitória - ES</span>
                     </div>
                 </div>
-                <button class="btn btn-primary" onclick="window.open('https://wa.me/5511999999999', '_blank')">
+                <button class="btn btn-primary btn-appointment" onclick="window.open('https://wa.me/5527992665363', '_blank')">
                     <i class="fab fa-whatsapp"></i> Agendar Consulta
                 </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Minha Trajetória / Bio Section -->
-    <section class="about" id="sobre">
-        <div class="container">
-            <div class="about-wrapper">
-                <div class="about-image">
-                    <div class="image-placeholder circular">
-                        [Foto de perfil]
-                    </div>
-                </div>
-                <div class="about-content">
-                    <h3 class="section-title">Minha Trajetória</h3>
-                    <div class="credentials">
-                        <div class="credential-item">
-                            <span class="credential-label">CRMV-SP:</span>
-                            <span class="credential-value">12345</span>
-                        </div>
-                        <div class="credential-item">
-                            <span class="credential-label">Especialização:</span>
-                            <span class="credential-value">Estética Veterinária</span>
-                        </div>
-                    </div>
-                    <p class="about-text">
-                        Com mais de 8 anos de experiência na medicina veterinária, especializei-me em estética animal, 
-                        tricologia e bem-estar pet. Meu objetivo é proporcionar aos animais de estimação não apenas saúde, 
-                        mas também autoestima e confiança, refletindo-se em sua qualidade de vida.
-                    </p>
-                    <p class="about-text">
-                        Formada pela Universidade de São Paulo com especialização em Dermatologia Veterinária, 
-                        busco constantemente atualizar meus conhecimentos nas mais recentes técnicas de estética animal.
-                    </p>
-                    <div class="about-buttons">
-                        <button class="btn btn-secondary" onclick="window.open('https://wa.me/5511999999999', '_blank')">
-                            Falar com Dra. Suellen
-                        </button>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -134,7 +85,7 @@
                         </div>
                     </div>
                     <p class="testimonial-text">
-                        "A Dra. Suellen é excelente! Meu pet ficou lindo após o procedimento estético. 
+                        "A Suellen Ramos é excelente! Meu pet ficou lindo após o procedimento estético. 
                         Profissional atenciosa, cuidadosa e oferece um atendimento impecável. Recomendo muito!"
                     </p>
                     <p class="testimonial-author">— Maria Silva, tutora do Lulu</p>
@@ -143,22 +94,58 @@
         </div>
     </section>
 
+    <!-- Minha Trajetória / Bio Section -->
+    <section class="about" id="sobre">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image">
+                    <div class="image-placeholder oval">
+                        <img src="images/profile_photo.webp" alt="Bio">
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3 class="section-title">Minha Trajetória</h3>
+                    <div class="credentials">
+                        <div class="credential-item">
+                            <span class="credential-label">CRMV-ES</span>
+                            <span class="credential-value">2184</span>
+                        </div>
+                        <div class="credential-item">
+                            <span class="credential-label">Especialização</span>
+                            <span class="credential-value">Dermatologia</span>
+                        </div>
+                    </div>
+                    <p class="about-text">
+                        Sou médica veterinária por vocação. Desde muito antes do diploma, os animais já faziam parte da minha vida. Durante a faculdade, fui monitora, estagiária e participei de iniciação científica, passando grande parte do meu tempo no hospital veterinário — sempre conciliando a profissão com a maternidade.
+                        Antes mesmo de me formar, já resgatava, cuidava, castrava e doava animais.
+                    </p>
+                    <p class="about-text">
+                        Após a graduação, ingressei no mestrado em Doenças Infecciosas, com foco em leishmaniose cutânea, e busquei formações complementares importantes, como tratamento com células-tronco em animais.
+                        Após anos de atuação em consultório, decidi me especializar no atendimento veterinário domiciliar, oferecendo mais conforto e menos estresse aos pacientes. Ao perceber a grande demanda por dermatologia veterinária na minha região — e a dificuldade de acesso a especialistas — concluí a pós-graduação em Dermatologia Veterinária.
+                    </p>
+                    <div class="about-buttons">
+                        <button class="btn btn-secondary" onclick="window.open('https://wa.me/5527992665363', '_blank')">
+                            Falar com Suellen Ramos
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Filosofia / Missão Section -->
     <section class="philosophy" id="filosofia">
         <div class="container">
-            <h3 class="section-title">Nossa Missão</h3>
+            <h3 class="section-title">Minha Missão</h3>
             <div class="philosophy-content">
                 <p class="philosophy-text">
-                    Acredito que a saúde e a beleza andam juntas. Cada pet merece sentir-se bem consigo mesmo,
-                    exibindo sua melhor versão. Através de procedimentos éticos, técnicas inovadoras e um atendimento
-                    humanizado, busco trazer autoestima, saúde, beleza e bem-estar para cada animal que passa pelo meu consultório.
+                    Transformar o cuidado veterinário em uma experiência acolhedora, técnica e verdadeiramente humana, onde cada paciente é tratado com respeito, conforto e excelência científica.
                 </p>
                 <p class="philosophy-text">
-                    Meu compromisso é com o bem-estar integral do seu pet, considerando sempre seus limites, 
-                    saúde e individualidade. Cada procedimento é personalizado e pensado no melhor interesse do animal.
+                    Busco aliviar o sofrimento dos animais e a angústia de quem os ama, oferecendo um atendimento individualizado, atento aos detalhes e baseado em conhecimento sólido, empatia e compromisso com a qualidade de vida. Mais do que tratar doenças, meu propósito é promover bem-estar, fortalecer vínculos e levar tranquilidade às famílias por meio de uma medicina veterinária ética, próxima e sensível às necessidades de cada ser.
                 </p>
             </div>
-            <button class="btn btn-primary btn-large" onclick="window.open('https://wa.me/5511999999999', '_blank')">
+            <button class="btn btn-primary btn-large btn-appointment" onclick="window.open('https://wa.me/5527992665363', '_blank')">
                 <i class="fab fa-whatsapp"></i> Agendar Consulta
             </button>
         </div>
@@ -228,12 +215,12 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Dra. Suellen</h4>
+                    <h4>Suellen Ramos</h4>
                     <p>Veterinária Especializada em Estética Animal</p>
                 </div>
                 <div class="footer-section">
                     <h4>Contato</h4>
-                    <p>WhatsApp: <a href="https://wa.me/5511999999999" target="_blank">(11) 99999-9999</a></p>
+                    <p>WhatsApp: <a href="https://wa.me/5527992665363" target="_blank">(11) 99999-9999</a></p>
                     <p>Email: contato@drasuellen.com.br</p>
                 </div>
                 <div class="footer-section">
@@ -242,13 +229,13 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Dra. Suellen - Veterinária. Todos os direitos reservados.</p>
+                <p>&copy; 2025 Suellen Ramos - Veterinária. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/5511999999999" class="floating-whatsapp" title="Falar no WhatsApp" target="_blank">
+    <a href="https://wa.me/5527992665363" class="floating-whatsapp" title="Falar no WhatsApp" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
@@ -270,7 +257,7 @@
 
         // Close menu when clicking outside
         document.addEventListener('click', function(event) {
-            if (!event.target.closest('.header')) {
+            if (!event.target.closest('.hero-nav')) {
                 navMenu.classList.remove('active');
             }
         });
