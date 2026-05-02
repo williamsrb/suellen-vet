@@ -247,6 +247,35 @@ body {
     animation: pulse-glow 2s ease-in-out infinite;
 }
 
+.btn-instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: var(--color-white);
+    border: none;
+    box-shadow: 0 4px 15px rgba(225, 48, 108, 0.25);
+}
+
+.btn-instagram:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.06);
+    box-shadow: 0 6px 20px rgba(225, 48, 108, 0.35);
+}
+
+.hero-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+    width: 100%;
+}
+
+.philosophy-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    justify-content: center;
+    align-items: center;
+}
+
 @keyframes pulse-glow {
     0%, 100% {
         box-shadow: 0 2px 10px var(--color-white-shadow-light);
@@ -571,32 +600,76 @@ body {
     color: var(--color-gray-footer);
 }
 
+.footer-social {
+    margin-bottom: var(--spacing-md);
+    font-size: 0.95rem;
+}
+
+.footer-social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    color: var(--color-accent);
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 0.15em;
+}
+
+.footer-social-link:hover {
+    text-decoration: underline;
+}
+
+.footer-social-link .fab {
+    font-size: 1.15em;
+    color: #e4405f;
+}
+
 /* ====================================
-   FLOATING WHATSAPP BUTTON
+   FLOATING CONTACT BUTTONS (Instagram + WhatsApp)
    ==================================== */
 
-.floating-whatsapp {
+.floating-actions {
     position: fixed;
     bottom: var(--spacing-lg);
     right: var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    z-index: 999;
+}
+
+.floating-whatsapp,
+.floating-instagram {
     width: 60px;
     height: 60px;
-    background: var(--color-success);
     color: var(--color-white);
     border-radius: var(--radius-full);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
     transition: var(--transition);
-    z-index: 999;
     text-decoration: none;
+}
+
+.floating-whatsapp {
+    background: var(--color-success);
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
 }
 
 .floating-whatsapp:hover {
     transform: scale(1.1);
     box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
+}
+
+.floating-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    box-shadow: 0 4px 20px rgba(225, 48, 108, 0.35);
+}
+
+.floating-instagram:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 25px rgba(225, 48, 108, 0.45);
 }
 
 /* ====================================
@@ -638,9 +711,13 @@ body {
         font-size: 0.95rem;
     }
 
-    .floating-whatsapp {
+    .floating-actions {
         bottom: var(--spacing-md);
         right: var(--spacing-md);
+    }
+
+    .floating-whatsapp,
+    .floating-instagram {
         width: 55px;
         height: 55px;
         font-size: 1.8rem;
@@ -694,7 +771,7 @@ body {
 
 @media print {
     .hero-nav,
-    .floating-whatsapp {
+    .floating-actions {
         display: none;
     }
 }
