@@ -722,6 +722,17 @@ body {
         height: 55px;
         font-size: 1.8rem;
     }
+
+    /* Scroll past fixed FABs so footer links (e.g. .footer-social) stay visible */
+    .footer {
+        padding-bottom: calc(
+            var(--spacing-lg) +
+            var(--spacing-md) +
+            55px + 0.75rem + 55px +
+            var(--spacing-sm) +
+            env(safe-area-inset-bottom, 0px)
+        );
+    }
 }
 
 @media (max-width: 480px) {
@@ -752,7 +763,27 @@ body {
     .philosophy,
     .services,
     .footer {
-        padding: var(--spacing-xl) var(--spacing-md);
+        padding-left: var(--spacing-md);
+        padding-right: var(--spacing-md);
+    }
+
+    .about,
+    .reviews,
+    .philosophy,
+    .services {
+        padding-top: var(--spacing-xl);
+        padding-bottom: var(--spacing-xl);
+    }
+
+    .footer {
+        padding-top: var(--spacing-xl);
+        padding-bottom: calc(
+            var(--spacing-xl) +
+            var(--spacing-md) +
+            55px + 0.75rem + 55px +
+            var(--spacing-sm) +
+            env(safe-area-inset-bottom, 0px)
+        );
     }
 
     .services {
